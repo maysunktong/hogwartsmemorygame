@@ -1,0 +1,63 @@
+@font-face {
+  font-family: "Harry Potter Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("font-HP.woff");
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Harry Potter Regular";
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: #330055;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg %3E%3Ccircle fill='%23330055' cx='50' cy='0' r='50'/%3E%3Cg fill='%23300051' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%232e004d' cx='50' cy='100' r='50'/%3E%3Cg fill='%232b0048' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%23290044' cx='50' cy='200' r='50'/%3E%3Cg fill='%23260040' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%2324003c' cx='50' cy='300' r='50'/%3E%3Cg fill='%23210037' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%231f0033' cx='50' cy='400' r='50'/%3E%3Cg fill='%231c002f' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%231a002b' cx='50' cy='500' r='50'/%3E%3Cg fill='%23170026' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%23140022' cx='50' cy='600' r='50'/%3E%3Cg fill='%2312001e' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%230f001a' cx='50' cy='700' r='50'/%3E%3Cg fill='%230d0015' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%230a0011' cx='50' cy='800' r='50'/%3E%3Cg fill='%2308000d' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%23050009' cx='50' cy='900' r='50'/%3E%3Cg fill='%23030004' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%23000000' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+}
+
+.stats-panel {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.card {
+  width: 120px;
+  height: 120px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  cursor: pointer;
+  transition: transform 1s;
+  delay: 1s;
+}
+
+.invisible {
+  visibility: visible;
+  opacity: 0.4;
+  transition: opacity 2s linear;
+}
